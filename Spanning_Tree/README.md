@@ -68,7 +68,7 @@
 * Space: 2|V| and |V| is number of vertices
 * Time: O( |V| + |E| ), with V and E are set of vertices and edges, because in the worst case, any vertices and edges will be visit once.  
 6. **Tracing**
-#### If you have had declared array pre, you can call pre[$v$] as a node leading to v in BFS process 
+#### If you have had declared array pre, you can call pre[v] as a node leading to v in BFS process 
 > The path from pre[v] = u is the shortest way from u to v
 
 * Note: if you find the way from u to v in BFS process, you must start from u
