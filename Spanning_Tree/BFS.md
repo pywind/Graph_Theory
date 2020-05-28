@@ -60,6 +60,6 @@
 * Time: $O(|V|+|E|)$ 
 6. Tracing
 ### If you have had declared array p, you would have traced and found the way of spanning tree
-### p[v] = u is the shortest way between u and 
+### p[v] = u is the shortest way between u and v
 
 
