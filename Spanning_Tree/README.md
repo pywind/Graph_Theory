@@ -1,7 +1,7 @@
 # **Breadth-First Search**
 > Thuật toán tìm kiếm theo chiều rộng
 ### Mục đích: 
-* tìm kiếm đường đi từ một đỉnh khác hoặc ngược lại, hoặc tìm kiếm đường đi từ đỉnh gốc tới tất cả cách đỉnh khác. 
+* Tìm kiếm đường đi từ một đỉnh khác hoặc ngược lại, hoặc tìm kiếm đường đi từ đỉnh gốc tới tất cả cách đỉnh khác. 
 * Dùng tìm các thành phần liên thông của đồ thị, hoặc kiểm tra đồ thị hai phía.
 ## Algorithm
 > Using data structure ***queue*** 
@@ -34,7 +34,7 @@
 
  > .swap(name_queue2) : *swap 2 queue*
 
- 4. Algorithm
+ 4. Algorithm analyst
  #### Source code C++ :
  ``` C++ 
  void BFS(int W[][50], int n, int m, int s) {
