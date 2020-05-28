@@ -1,4 +1,4 @@
-# Graph_Algorithm
+# **Graph_Algorithm**
 ## Lý thuyết đồ thị :
 ### Một đồ thị kí hiệu G = (V, E)
 ## Trong đó V: tập các đỉnh, |V| = n = số đỉnh
