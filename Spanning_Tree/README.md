@@ -3,9 +3,9 @@
 ### Mục đích: 
 * tìm kiếm đường đi từ một đỉnh khác hoặc ngược lại, hoặc tìm kiếm đường đi từ đỉnh gốc tới tất cả cách đỉnh khác. 
 * Dùng tìm các thành phần liên thông của đồ thị, hoặc kiểm tra đồ thị hai phía.
-## Thuật toán
-> Sử dụng cấu trúc dữ liệu ***queue*** *(hàng đợi)*
-### Queue là CTDL cho phép lưu trữ và truy xuất dữ liệu ***First In First Out***
+## Algorithm
+> Using data structure ***queue*** 
+### Queue là CTDL cho phép lưu trữ và truy xuất dữ liệu ***First In First Out (FIFO)***
 1. C++ library 
 ``` C++ 
 #include <queue> 
@@ -56,22 +56,22 @@
 }
 ``` 
 - while (Queue is not empty) 
-    - $u$ = the $1st$ of queue and delete top queue
-    - Spread out to all vertices adjacent to $u$ that have not yet been passed :
-        - mark vertex $v$ 
-        - assign the path before $v$ = $u$
-        - push $v$ into Q 
+    - u = the 1st of queue and delete top queue
+    - Spread out to all vertices adjacent to u that have not yet been passed :
+        - mark vertex v 
+        - assign the path before v = u
+        - push v into Q 
     
 - //End while
 
 5. **Complexity**
-* Space: $2|V|$ and $|V|$ is number of vertices
-* Time: $O(|V|+|E|)$, with V and E are set of vertices and edges, because in the worst case, any vertices and edges will be visit once.  
+* Space: 2|V| and |V| is number of vertices
+* Time: O( |V| + |E| ), with V and E are set of vertices and edges, because in the worst case, any vertices and edges will be visit once.  
 6. **Tracing**
-#### If you have had declared array pre, you can call pre[$v$] as a node leading to $v$ in BFS process 
+#### If you have had declared array pre, you can call pre[$v$] as a node leading to v in BFS process 
 > The path from pre[v] = u is the shortest way from u to v
 
 * Note: if you find the way from u to v in BFS process, you must start from u
-> The recursion is: pre[ pre[ pre...[$v$]]] = $u$
+> The recursion is: pre[ pre[ pre...[v]]] = u
 
 
