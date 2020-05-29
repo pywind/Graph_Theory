@@ -1,9 +1,8 @@
 # **Depth-First Search**
-> Thuật toán tìm kiếm theo chiều sâu
 
->> What's the difference between DFS vs DFS ?
+> What's the difference between DFS vs DFS ?
 
->> DFS process installation is more simple and compact than BFS
+> DFS process installation is more simple and compact than BFS
 ## Concept: 
 * It's like finding your way in a matrix. Always go to the first path you see and mark it. 
 * If you encounter a marked road, do not enter because it is useless. 
@@ -48,7 +47,7 @@ void DFS(int u) {
     D[u] = 1; // mark vertex u 
     for(int i = 0; i < g[u].size(); ++i) { // u near v
         int v = g[u][i];
-        if(D[v] == 0)  {
+        if(D[v] == 0)  { // if D[v] isn't marked
             DFS(v); 
         }
     }
@@ -103,7 +102,7 @@ void DFS(int u) {
         - u = top of S
         - delete top S
     
-- //End while
+- End while
 
 3. **Complexity**
 * Space: 2|V| and |V| is number of vertices.
