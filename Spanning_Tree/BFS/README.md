@@ -1,12 +1,10 @@
 # **Breadth-First Search**
-> Thuật toán tìm kiếm theo chiều rộng
 ## Concept: 
-* Tìm kiếm đường đi từ một đỉnh khác hoặc ngược lại, hoặc tìm kiếm đường đi từ đỉnh gốc tới tất cả cách đỉnh khác. 
-* Dùng tìm các thành phần liên thông của đồ thị, hoặc kiểm tra đồ thị hai phía.
+* By using the BFS process, we will browse the spreading graph in layers from the vertex u and we will find the shortest path to another vertex. And BFS is a good way to find out which vertex can't be reached from u.
 ## Algorithm
 > Using data structure ***queue*** 
 ### Queue is data structure allows storage and access data ***First In First Out (FIFO)***
-1. Stack
+1. **Stack**
 * C++ library 
 ``` C++ 
 #include <queue> 
@@ -56,14 +54,16 @@
     }
 }
 ``` 
-- while (Queue is not empty) 
-    - u = the 1st of queue and delete top queue
+### Explain
+- Queue Q is clear
+- while (Q != empty) 
+    - u = the top of queue and delete top queue
     - Spread out to all vertices adjacent to u that have not yet been passed :
         - mark vertex v 
         - assign the path before v = u
         - push v into Q 
     
-- //End while
+- End while
 
 3. **Complexity**
 * Space: 2|V| and |V| is number of vertices
@@ -74,5 +74,8 @@
 
 * Note: if you find the way from u to v in BFS process, you must start from u
 > The recursion is: pre[ pre[ pre...[v]]] = u
+5. **Application**
+* Search the path from a root to another or back, or search the path from a root to all other vertices.
+* This algorithm is also used to find connected components of the graph, or check the two-sided graph.
 
 
