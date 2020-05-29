@@ -10,18 +10,20 @@
 * So when you run out of means to mark while you're still not out of the matrix, you're stuck.
 ## Algorithm
 > Using data structure ***stack*** 
-### Stack is data structure allows storag and access data  ***First In Last Out (LIFO)***
-1. C++ library 
+
+1. **Stack**
+#### Stack is data structure allows storage and access data  ***First In Last Out (LIFO)
+* C++ library 
 ```C++ 
 #include <stack> 
 ```
-2. Constructor
+* Constructor
 ``` C++
  stack <data_type> name_stack
  /// declare from vector
  stack <int, vector <int>> name_stack
  ```
- 3. Function
+* Function
  
  > .empty() : *Return true if stack is empty*
 
@@ -37,12 +39,12 @@
 
  > .swap(name_stack2) : *swap 2 stack*
 
- 4. Algorithm
+ 2. **Algorithm**
  #### Source code C++ :
  ``` C++ 
  void DFS(int n) {
     D[1] = 1;
-    pre[1] = -1;
+    p[1] = -1;
     stack <int> S;
     S.push(0);
     int u = 1;
@@ -58,7 +60,7 @@
         if (v < n) {
             if (W[u][v] > 0) {
                 D[v] = 1;
-                pre[v] = u;
+                p[v] = u;
                 S.push(u);
                 u = v;
             }
@@ -78,7 +80,7 @@
         - Set a bool stop and v
         - while !stop , v = 0 -> n
         - if we meet a vertex has passed yet -> stop
-    - If it have a point has marked, mark D[v] = 1, pre[v] = u
+    - If it have a point has marked, Mark D[v] = 1, pre[v] = u
         - push(u) to S
         - u = v
     - Else there is no point (all points have passed) 
@@ -87,14 +89,14 @@
     
 - //End while
 
-5. **Complexity**
+3. **Complexity**
 * Space: 2|V| and |V| is number of vertices.
 * Time: O( |V| + |E| ), with V and E are set of vertices and edges, DFS always call a point one time only.
-6. **Tracing**
+4. **Tracing**
 #### If you have had declared array pre, you can call pre[v] as a node leading to v in DFS process 
 > The path from pre[v] = u is the shortest way from u to v
 
-* Note: if you find the way from u to v in DFS process, you must start from u
+* Note: if you find the way from u to v in D FS process, you must start from u
 > The recursion is: pre[ pre[ pre...[v]]] = u
 
 
