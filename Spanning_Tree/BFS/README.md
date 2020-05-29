@@ -5,7 +5,7 @@
 * Dùng tìm các thành phần liên thông của đồ thị, hoặc kiểm tra đồ thị hai phía.
 ## Algorithm
 > Using data structure ***queue*** 
-### Queue là CTDL cho phép lưu trữ và truy xuất dữ liệu ***First In First Out (FIFO)***
+### Queue is data structure allows storage and assess data ***First In First Out (FIFO)***
 1. C++ library 
 ``` C++ 
 #include <queue> 
