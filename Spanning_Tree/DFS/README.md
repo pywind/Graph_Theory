@@ -103,7 +103,7 @@ void DFS(int u) {
         - delete top S
     
 - End while
-
+![Image of DFS](https://cowboycoder.tech/img/uploads/ly-thuyet-do-thi-co-ban-3-2.gif)
 3. **Complexity**
 * Space: 2|V| and |V| is number of vertices.
 * Time: O( |V| + |E| ), with V and E are set of vertices and edges, DFS always calls a point one time only.
