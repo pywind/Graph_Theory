@@ -42,7 +42,7 @@
  ``` C++ 
  void DFS(int n) {
     D[1] = 1;
-    p[1] = -1;
+    pre[1] = -1;
     stack <int> S;
     S.push(0);
     int u = 1;
@@ -58,7 +58,7 @@
         if (v < n) {
             if (W[u][v] > 0) {
                 D[v] = 1;
-                p[v] = u;
+                pre[v] = u;
                 S.push(u);
                 u = v;
             }
@@ -78,7 +78,7 @@
         - Set a bool stop and v
         - while !stop , v = 0 -> n
         - if we meet a vertex has passed yet -> stop
-    - If it have a point has marked, Mark D[v] = 1, pre[v] = u
+    - If it have a point has marked, mark D[v] = 1, pre[v] = u
         - push(u) to S
         - u = v
     - Else there is no point (all points have passed) 
@@ -94,7 +94,7 @@
 #### If you have had declared array pre, you can call pre[v] as a node leading to v in DFS process 
 > The path from pre[v] = u is the shortest way from u to v
 
-* Note: if you find the way from u to v in D FS process, you must start from u
+* Note: if you find the way from u to v in DFS process, you must start from u
 > The recursion is: pre[ pre[ pre...[v]]] = u
 
 
