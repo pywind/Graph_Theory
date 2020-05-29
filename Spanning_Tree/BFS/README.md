@@ -1,22 +1,23 @@
 # **Breadth-First Search**
 > Thuật toán tìm kiếm theo chiều rộng
-### Mục đích: 
+## Concept: 
 * Tìm kiếm đường đi từ một đỉnh khác hoặc ngược lại, hoặc tìm kiếm đường đi từ đỉnh gốc tới tất cả cách đỉnh khác. 
 * Dùng tìm các thành phần liên thông của đồ thị, hoặc kiểm tra đồ thị hai phía.
 ## Algorithm
 > Using data structure ***queue*** 
-### Queue is data structure allows storage and assess data ***First In First Out (FIFO)***
-1. C++ library 
+### Queue is data structure allows storage and access data ***First In First Out (FIFO)***
+1. Stack
+* C++ library 
 ``` C++ 
 #include <queue> 
 ```
-2. Constructor
+* Constructor
 ``` C++
  queue <data_type> name_queue
  /// declare from list
  queue <int, list <int>> name_queue
  ```
- 3. Function
+* Functions
  
  > .empty() : *Return true if queue is empty*
 
@@ -34,7 +35,7 @@
 
  > .swap(name_queue2) : *swap 2 queue*
 
- 4. Algorithm analyst
+2. Algorithm analyst
  #### Source code C++ :
  ``` C++ 
  void BFS(int W[][50], int n, int m, int s) {
@@ -64,10 +65,10 @@
     
 - //End while
 
-5. **Complexity**
+3. **Complexity**
 * Space: 2|V| and |V| is number of vertices
 * Time: O( |V| + |E| ), with V and E are set of vertices and edges, because in the worst case, any vertices and edges will be visit once.  
-6. **Tracing**
+4. **Tracing**
 #### If you have had declared array pre, you can call pre[v] as a node leading to v in BFS process 
 > The path from pre[v] = u is the shortest way from u to v
 
