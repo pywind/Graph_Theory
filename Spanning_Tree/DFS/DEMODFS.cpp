@@ -13,7 +13,7 @@ int D[50] = { 1 }, p[50] = { 0 };
 //        }
 //    }
 //}
-void init(int n, int m, int s) {
+void init(int& n, int& m, int& s) {
     cin >> n >> m >> s;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; ++j) {
