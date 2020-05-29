@@ -1,7 +1,7 @@
 # **Depth-First Search**
 > Thuật toán tìm kiếm theo chiều sâu
 
->> What's difference between DFS vs DFS ?
+>> What's the difference between DFS vs DFS ?
 
 >> DFS process installation is more simple and compact than BFS
 ## Concept: 
@@ -40,8 +40,24 @@
  > .swap(name_stack2) : *swap 2 stack*
 
  2. **Algorithm**
- #### Source code C++ :
- ``` C++ 
+ #### Source code C++ with recursion:
+ ```C++
+vector g[maxn]; 
+int D[maxn]; 
+void DFS(int u) {
+    D[u] = 1; // mark vertex u 
+    for(int i = 0; i < g[u].size(); ++i) { // u near v
+        int v = g[u][i];
+        if(D[v] == 0)  {
+            DFS(v); 
+        }
+    }
+}
+```
+
+
+#### Source code C++ without recursion by stack: 
+```C++ 
  void DFS(int n) {
     D[1] = 1;
     p[1] = -1;
@@ -91,12 +107,15 @@
 
 3. **Complexity**
 * Space: 2|V| and |V| is number of vertices.
-* Time: O( |V| + |E| ), with V and E are set of vertices and edges, DFS always call a point one time only.
+* Time: O( |V| + |E| ), with V and E are set of vertices and edges, DFS always calls a point one time only.
 4. **Tracing**
-#### If you have had declared array pre, you can call pre[v] as a node leading to v in DFS process 
+    #### If you have had declared array pre, you can call pre[v] as a node leading to v in DFS process 
 > The path from pre[v] = u is the shortest way from u to v
 
 * Note: if you find the way from u to v in D FS process, you must start from u
 > The recursion is: pre[ pre[ pre...[v]]] = u
-
-
+5. **Application**
+* Identify the connected components of a graph.
+* Topological arrangements for graphs.
+* Identify the strongly connected components of a directed graph.
+* Check if a graph is a flat graph.
