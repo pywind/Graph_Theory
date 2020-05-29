@@ -101,7 +101,6 @@ void DFS(int u) {
     - Else there is no point (all points have passed) 
         - u = top of S
         - delete top S
-    
 - End while
 ![Image of DFS](https://cowboycoder.tech/img/uploads/ly-thuyet-do-thi-co-ban-3-2.gif)
 3. **Complexity**
