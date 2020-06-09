@@ -4,7 +4,7 @@
 ## Algorithm
 > Using data structure ***queue*** 
 ### Queue is data structure allows storage and access data ***First In First Out (FIFO)***
-1. **Stack**
+1. **Queue**
 * C++ library 
 ``` C++ 
 #include <queue> 
