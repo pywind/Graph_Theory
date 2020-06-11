@@ -11,21 +11,21 @@ The standard application is to a problem like phone network design. You have a b
 – ***Traveling salesperson problem, Steiner tree***
 A less obvious application is that the minimum spanning tree can be used to approximately solve the traveling salesman problem. A convenient formal way of defining this problem is to find the shortest path that visits each point at least once.
 
-### Note that if you have a path visiting all points exactly once, it’s a special kind of tree. For instance in the example above, twelve of sixteen spanning trees are actually paths. If you have a path visiting some vertices more than once, you can always drop some edges to get a tree. So in general the MST weight is less than the TSP weight, because it’s a minimization over a strictly larger set.
+> Note that if you have a path visiting all points exactly once, it’s a special kind of tree. For instance in the example above, twelve of sixteen spanning trees are actually paths. If you have a path visiting some vertices more than once, you can always drop some edges to get a tree. So in general the MST weight is less than the TSP weight, because it’s a minimization over a strictly larger set.
 
 ### On the other hand, if you draw a path tracing around the minimum spanning tree, you trace each edge twice and visit all points, so the TSP weight is less than twice the MST weight. Therefore this tour is within a factor of two of optimal.
 
 ### Indirect applications.
-– max bottleneck paths
-– LDPC codes for error correction
-– image registration with Renyi entropy
-– learning salient features for real-time face verification
-– reducing data storage in sequencing amino acids in a protein
-– model locality of particle interactions in turbulent fluid flows
-– autoconfig protocol for Ethernet bridging to avoid cycles in a network
+* max bottleneck paths
+* LDPC codes for error correction
+* image registration with Renyi entropy
+* learning salient features for real-time face verification
+* reducing data storage in sequencing amino acids in a protein
+* model locality of particle interactions in turbulent fluid flows
+* autoconfig protocol for Ethernet bridging to avoid cycles in a network
 
 ### Cluster analysis
-- k clustering problem can be viewed as finding an MST and deleting the k-1 most
+* k clustering problem can be viewed as finding an MST and deleting the k-1 most
 expensive edges.
 
 **Sources:**
