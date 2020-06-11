@@ -1,15 +1,14 @@
 # Applications of Minimum Spanning Tree Problem #
 Minimum Spanning Tree (MST) problem: Given connected graph G with positive edge weights, find a min weight set of edges that connects all of the vertices.
 MST is fundamental problem with diverse applications.
-
 Network design.
-– * telephone, electrical, hydraulic, TV cable, computer, road *
+– *telephone, electrical, hydraulic, TV cable, computer, road*
 The standard application is to a problem like phone network design. You have a business with several offices; you want to lease phone lines to connect them up with each other; and the phone company charges different amounts of money to connect different pairs of cities. You want a set of lines that connects all your offices with a minimum total cost. It should be a spanning tree, since if a network isn’t a tree you can always remove some edges and save money.
 
 
 
 Approximation algorithms for NP-hard problems.
-– * traveling salesperson problem, Steiner tree *
+– *Traveling salesperson problem, Steiner tree*
 A less obvious application is that the minimum spanning tree can be used to approximately solve the traveling salesman problem. A convenient formal way of defining this problem is to find the shortest path that visits each point at least once.
 
 Note that if you have a path visiting all points exactly once, it’s a special kind of tree. For instance in the example above, twelve of sixteen spanning trees are actually paths. If you have a path visiting some vertices more than once, you can always drop some edges to get a tree. So in general the MST weight is less than the TSP weight, because it’s a minimization over a strictly larger set.
@@ -29,6 +28,6 @@ Cluster analysis
 - k clustering problem can be viewed as finding an MST and deleting the k-1 most
 expensive edges.
 
-** Sources: **
-[Princeton](https://www.cs.princeton.edu/courses/archive/spr07/cos226/lectures/mst.pdf)
-[Ics](https://www.ics.uci.edu/~eppstein/161/960206.html)
+**Sources:**
+> [Princeton](https://www.cs.princeton.edu/courses/archive/spr07/cos226/lectures/mst.pdf)
+> [Ics](https://www.ics.uci.edu/~eppstein/161/960206.html)
