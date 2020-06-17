@@ -1,4 +1,4 @@
-# **Graph Algorithm**
+# **Graph Theory**
 ## General theory 
 >  Lý thuyết đồ thị :
 ### Một đồ thị kí hiệu G = (V, E)
