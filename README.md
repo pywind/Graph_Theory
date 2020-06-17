@@ -5,7 +5,7 @@
 ## Trong đó: 
 * V: tập các đỉnh, |V| = n = số đỉnh
 * E: Tập các cạnh, |E| = m = số đỉnh
-* e thuộc E liên kết với một cặp đỉnh v, w thuộc V và được kí hiệu e = (v, w)  (v)____e___(w)
+* e thuộc E liên kết với một cặp đỉnh v, w thuộc V và được kí hiệu e = (v, w)  (v)______e_____(w)
 * e1 = (v, w), e2 = (w, v) là 2 **cạnh song song**
 * e = (v, v) là **một vòng**
 * d(v) là **bậc của đỉnh v**, là số cạnh kề với v, *vòng được tính là 2*
