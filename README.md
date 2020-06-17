@@ -30,7 +30,7 @@
 > Định nghĩa 
 *  T là cây khung của một đồ thị G = (V, E) nếu T là một cây có tập đỉnh là tập đỉnh V và
 tập cạnh là tập con của E của G.
-> ![Spanning tree](https://miro.medium.com/proxy/1*-gNoEeTMGYnCG5SSLi1Wtg.png)
+![Spanning tree](https://miro.medium.com/proxy/1*-gNoEeTMGYnCG5SSLi1Wtg.png)
 * Định lý 
   * Một đồ thị G có cây khung nếu và chỉ nếu G liên thông.
 ### Mô tả trong chương trình  
