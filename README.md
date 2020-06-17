@@ -6,12 +6,12 @@
 * V: tập các đỉnh, |V| = n = số đỉnh
 * E: Tập các cạnh, |E| = m = số đỉnh
 * e thuộc E liên kết với một cặp đỉnh v, w thuộc V và được kí hiệu e = (v, w)  
-                                      (v)______e_____(w)
+                                      (v)------e------(w)
 * e1 = (v, w), e2 = (w, v) là 2 **cạnh song song**
 * e = (v, v) là **một vòng**
 * d(v) là **bậc của đỉnh v**, là số cạnh kề với v, *vòng được tính là 2*
 * Đỉnh có bậc 0 là **đỉnh cô lập**
-* Đỉnh bậc là 1 là **đỉnh treo** 
+* Đỉnh bậc 1 là **đỉnh treo** 
 
 ### Một đồ thị lưu thông 
 ![Graph](https://lh3.googleusercontent.com/proxy/7MvOFYG_CAIWtWiqiA7MeS6717P1uUeSzrNpqZ6BYJpBlcJ3cbJcvv5fZo-r5D-bLGcFLYzzbnaUid6ulw54hlh1gHbSMzOYkdkDj3SAhd_VhFMrKyuFEHn8)
