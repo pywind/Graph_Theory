@@ -19,6 +19,7 @@
  - MAKE_SET:
  * I recommend using the atoi function in the <numeric> include
  ``` C++
+ -> void iota (ForwardIterator first, ForwardIterator last, T val)
  iota(parent, parent + n + 1, 0);
  ```
  
