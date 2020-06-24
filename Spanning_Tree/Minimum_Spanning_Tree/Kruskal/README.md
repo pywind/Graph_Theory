@@ -13,5 +13,12 @@
 * Second, how do you solve the problem of storing a pair of vertices with their weights ?
   * Create a new struct or class. Or use the data type available, don't you ?
  3. Solution
+ * Unification of variables
+ ```
+ parent: is array contain the position of vectex. parent[5] = 4. It mean element 5 is in set 4th
  - MAKE_SET:
+ * I recommend using the atoi function in the <numeric> include
+ ``` C++
+ iota(parent, parent + n + 1, 0);
+ ```
  
