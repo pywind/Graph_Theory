@@ -14,7 +14,7 @@
 * Đỉnh bậc 1 là **đỉnh treo** 
 
 ### Một đồ thị lưu thông 
-![Graph](https://lh3.googleusercontent.com/proxy/7MvOFYG_CAIWtWiqiA7MeS6717P1uUeSzrNpqZ6BYJpBlcJ3cbJcvv5fZo-r5D-bLGcFLYzzbnaUid6ulw54hlh1gHbSMzOYkdkDj3SAhd_VhFMrKyuFEHn8)
+![Graph](https://mathinsight.org/media/image/image/small_undirected_network_labeled.png)
 * G luôn là đồ thị đơn giản (không có cạnh song song và không có vòng) 
 * W[u][v] = a thuộc E; u, v là các đỉnh
 * a gọi là trọng số
