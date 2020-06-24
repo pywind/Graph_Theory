@@ -1,33 +1,42 @@
-# Applications of Minimum Spanning Tree Problem #
-Minimum Spanning Tree (MST) problem: Given connected graph G with positive edge weights, find a min weight set of edges that connects all of the vertices.
-### MST is fundamental problem with diverse applications.
-### Network design.
-– ***Telephone, electrical, hydraulic, TV cable, computer, road***
-The standard application is to a problem like phone network design. You have a business with several offices; you want to lease phone lines to connect them up with each other; and the phone company charges different amounts of money to connect different pairs of cities. You want a set of lines that connects all your offices with a minimum total cost. It should be a spanning tree, since if a network isn’t a tree you can always remove some edges and save money.
 
+# Kruskal’s Minimum Spanning Tree
 
+> Definition: Let G be the weighted graph. The smallest spanning tree is the spanning tree whose sum of the weights of the edges is the smallest.
 
-### Approximation algorithms for NP-hard problems.
-– ***Traveling salesperson problem, Steiner tree***
-A less obvious application is that the minimum spanning tree can be used to approximately solve the traveling salesman problem. A convenient formal way of defining this problem is to find the shortest path that visits each point at least once.
+1. Concept
 
-> Note that if you have a path visiting all points exactly once, it’s a special kind of tree. For instance in the example above, twelve of sixteen spanning trees are actually paths. If you have a path visiting some vertices more than once, you can always drop some edges to get a tree. So in general the MST weight is less than the TSP weight, because it’s a minimization over a strictly larger set.
+* To find the minium, we must to **SORT** up ascending.
+* The constituent sets are marked as individual subsets.
+* Union of subsets containing edges of increasing length. We will get a minimal spanning tree.
+* Mark the vertices that have been traversed for convenience.
 
-#### On the other hand, if you draw a path tracing around the minimum spanning tree, you trace each edge twice and visit all points, so the TSP weight is less than twice the MST weight. Therefore this tour is within a factor of two of optimal.
+2.Question
 
-### Indirect applications.
-* max bottleneck paths
-* LDPC codes for error correction
-* image registration with Renyi entropy
-* learning salient features for real-time face verification
-* reducing data storage in sequencing amino acids in a protein
-* model locality of particle interactions in turbulent fluid flows
-* autoconfig protocol for Ethernet bridging to avoid cycles in a network
+* First, we must to solve three problem:
+  * MAKE_SET (v): Create a set with only one vertex v.
+  * FIND_SET(p): Find the set containing vertices p.
+  * UNION (u, v): The assembly containing u with the set containing v forming a common set.
+* Second, how do you solve the problem of storing a pair of vertices with their weights ?
+  * Create a new struct or class. Or use the data type available, don't you ?
 
-### Cluster analysis
-* k clustering problem can be viewed as finding an MST and deleting the k-1 most
-expensive edges.
+3.Solution
 
-**Sources:**
-> [Princeton](https://www.cs.princeton.edu/courses/archive/spr07/cos226/lectures/mst.pdf)
-> [Ics](https://www.ics.uci.edu/~eppstein/161/960206.html)
+#### Unification of variables
+
+> parent: is array contain the position of vertex. parent[5] = 4. It mean element 5 is in set 4th
+
+### `MAKE_SET`
+
+I recommend using the atoi function in the numeric include
+-> void iota (ForwardIterator first, ForwardIterator last, T val)
+
+     iota(parent, parent + n + 1, 0)
+
+> Or if you want the simple way, you can use a for statement
+
+### `FIND_SET`
+
+* In default, we assign index i in set ith !
+* So, if parent[p] == p, we return p, *right* ?
+
+* 
