@@ -33,7 +33,7 @@
 
  > .swap(name_queue2) : *swap 2 queue*
 
-2. Algorithm analyst
+2. `Algorithm analyst`
  #### Source code C++ :
  ``` C++ 
  void BFS(int W[][50], int n, int m, int s) {
