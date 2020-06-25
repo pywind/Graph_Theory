@@ -1,11 +1,13 @@
 # Minimum Spanning Trees
 ## Spanning trees
 A spanning tree of a graph is just a subgraph that contains all the vertices and is a tree. A graph may have many spanning trees; for instance the complete graph on four vertices
+```
     o---o
     |\ /|
     | X |
     |/ \|
     o---o
+```
 has sixteen spanning trees:
     o---o    o---o    o   o    o---o
     |   |    |        |   |        |
