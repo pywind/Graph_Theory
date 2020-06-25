@@ -9,6 +9,7 @@ A spanning tree of a graph is just a subgraph that contains all the vertices and
     o---o
 ```
 has sixteen spanning trees:
+```
     o---o    o---o    o   o    o---o
     |   |    |        |   |        |
     |   |    |        |   |        |
@@ -32,6 +33,8 @@ has sixteen spanning trees:
     | \      | /        \ |      / |
     |  \     |/          \|     /  |
     o   o    o---o    o---o    o   o
+```
+
 ## Minimum spanning trees
 Now suppose the edges of the graph have weights or lengths. The weight of a tree is just the sum of weights of its edges. Obviously, different trees have different lengths. The problem: how to find the minimum length spanning tree?
 This problem can be solved by many different algorithms. It is the topic of some very recent research. There are several "best" algorithms, depending on the assumptions you make:
